@@ -151,6 +151,7 @@ func Provider() terraform.ResourceProvider {
 			"aws_elasticache_subnet_group":         resourceAwsElasticacheSubnetGroup(),
 			"aws_elasticsearch_domain":             resourceAwsElasticSearchDomain(),
 			"aws_elb":                              resourceAwsElb(),
+			"aws_ec2_tag":                          resourceAwsEc2Tag(),
 			"aws_flow_log":                         resourceAwsFlowLog(),
 			"aws_glacier_vault":                    resourceAwsGlacierVault(),
 			"aws_iam_access_key":                   resourceAwsIamAccessKey(),
