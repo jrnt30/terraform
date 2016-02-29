@@ -110,7 +110,13 @@ func resourceAwsEc2TagRead(d *schema.ResourceData, meta interface{}) error {
 				},
 			},
 			{
-				Name: aws.String(fmt.Sprintf("tag:%s", name)),
+				Name: aws.String("key"),
+				Values: []*string{
+					aws.String(name),
+				},
+			},
+			{
+				Name: aws.String("value"),
 				Values: []*string{
 					aws.String(value),
 				},
